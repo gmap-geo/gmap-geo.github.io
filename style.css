@@ -306,7 +306,6 @@ nav .nav-links a.selected{
 .post-content img{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    filter: blur(10px);
     width: 100%;
 }
 
@@ -319,20 +318,16 @@ nav .nav-links a.selected{
 
 
 .post-content .post-title{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    margin-left: 80px;
-    margin-right: 80px;
-    transform: translate(-50%, -300%);
     text-align: center;
-    justify-content: center;
-    color: #ffffff; 
+    justify-content: right;
+    padding: 10px 10px;
+    color: #000; 
     font-size: 35px;
     font-weight: 800;
-    filter: drop-shadow(30px 30px 30px rgba(255, 255, 255, 0.9));
-    background-color: rgba(0, 0, 0, 0.6);
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7));
 }
+
+
 
 .post-content p{
     padding: 10px 25px;
