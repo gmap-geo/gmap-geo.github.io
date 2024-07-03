@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(255, 250, 240);
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    object-fit: cover;
+    object-position: top;
+}
+
+nav{
+    padding: 20px 50px;
+    background-color:rgba(255, 250, 240);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+nav .logo img{
+    width: 150px;
+}
+
+nav .nav-links{
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.selected{
+    color: #01598b;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+}
+
+.superiorpanel{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.superiorpanel .panel .spimage{
+    width: 100%;
+    height: auto;    
+}
+
+.services{
+    padding: 10px 10px;
+}
+
+.services .service-panel img{
+    height: auto;
+    width: auto;
+    max-width: 45px;
+}
+
+.services img{
+    max-width: 650px;
+    margin-top: -5px;
+}
+
+.services .header{
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.services .header a{
+    color: #01598b;
+    font-weight: 800;
+}
+
+.services .header a:hover{
+    color: #01598b;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+}
+
+.services .serv-panel{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services .service-panel{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.services .serv-panel .serv-item{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    gap: 20px;
+    border-radius: 20px;
+    text-align: justify;
+    align-items: center;
+    background-color: #ffffff;
+    width: 650px;
+    height: 450px;
+    filter: drop-shadow(10px 10px 20px rgba(155, 155, 155, 0.4));
+    overflow: hidden;
+}
+
+.services .service-panel .service-item{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 350px;
+    perspective: 1000px;
+    transition: transform 0.8s;
+}
+
+.service-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.service-card .item-front img{
+    max-width: 80px;
+}
+
+.service-card .item-front a{
+    font-weight: 700;
+    padding: 0px 40px;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
+}
+
+.service-item:hover .service-card{
+    transform: rotateY(180deg);
+}
+
+.item-front{
+    gap: 30px;
+}
+
+.item-front, .item-back{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.item-back{
+    transform: rotateY(180deg);
+    text-align: justify;
+}
+
+.services .serv-item:hover{
+    transition: 0.8s;
+    transform: scale(1.05);
+    filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
+} 
+
+.services .serv-panel .serv-item a{
+    text-wrap: stable;
+}
+
+
+.post-panel{
+    padding: 20px 80px;
+    background-color: rgb(255, 250, 240);
+}
+
+.post-panel .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.posts{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.posts .post-item{
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.posts .post-item:hover{
+    transition: 0.5s;
+    transform: scale(1.02);
+    filter: drop-shadow(10px 10px 10px rgba(36, 36, 36, 0.5));
+}
+
+.post-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-info h5{
+    font-weight: 400;
+    font-style: italic;
+}
+
+.post-panel a.link,
+.last-posts a.link{
+    font-weight: 800;
+    color: #01598b;
+}
+
+.post-panel .header a:hover{
+    color: #01598b;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+}
+
+.blog{
+    padding: 10px 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer {
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdf4e2;    
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;  
+    padding: 80px 80px;  
+    gap: 100px
+}
+
+.about .left-about{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about .left-about img{
+    max-width: 300px;
+}
+
+.about .right-about img{
+    max-width: 500px;
+}
+
+.post{
+    padding: 40px 120px;   
+}
+
+.post-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    filter: drop-shadow(10px 10px 10px rgba(36, 36, 36, 0.5));
+    border-radius: 15px;
+    padding-bottom: 50px;
+}
+
+.post-content img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    filter: blur(10px);
+    width: 100%;
+}
+
+
+.post-content .post-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.post-content .post-title{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: 80px;
+    margin-right: 80px;
+    transform: translate(-50%, -300%);
+    text-align: center;
+    justify-content: center;
+    color: #ffffff; 
+    font-size: 35px;
+    font-weight: 800;
+    filter: drop-shadow(30px 30px 30px rgba(255, 255, 255, 0.9));
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.post-content p{
+    padding: 10px 25px;
+    text-align: justify;
+    font-weight: 400;
+    text-indent: 50px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
