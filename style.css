@@ -125,7 +125,7 @@ nav .nav-links a.selected{
     align-items: center;
     background-color: #ffffff;
     width: 650px;
-    height: 450px;
+    height: 500px;
     filter: drop-shadow(10px 10px 20px rgba(155, 155, 155, 0.4));
     overflow: hidden;
 }
@@ -265,12 +265,7 @@ nav .nav-links a.selected{
     gap: 20px;
 }
 
-.footer {
-    padding: 50px 80px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #fdf4e2;    
-}
+
 
 .about .contact{
     display: flex;
@@ -343,8 +338,10 @@ nav .nav-links a.selected{
     line-height: 1.5;
 }
 
-
-
-
-
+.footer {
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdf4e2;    
+}
 
