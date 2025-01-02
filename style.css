@@ -163,11 +163,14 @@ nav .nav-links a.selected{
 
 .service-item:hover {
     transform: scale(1.05);
+    -moz-transform: scale(1.05);
     filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
 }
 
 .service-item:hover .service-card{
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -moz-backface-visibility: hidden;
 }
 
 .item-front{
@@ -203,60 +206,6 @@ nav .nav-links a.selected{
 }
 
 
-.post-panel{
-    padding: 20px 80px;
-    background-color: rgb(255, 250, 240);
-}
-
-.post-panel .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.posts{    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-}
-
-.posts .post-item{
-    background-color: #ffffff;
-    padding: 10px;
-}
-
-.posts .post-item:hover{
-    transition: 0.5s;
-    transform: scale(1.02);
-    filter: drop-shadow(10px 10px 10px rgba(36, 36, 36, 0.5));
-}
-
-.post-info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.post-info h5{
-    font-weight: 400;
-    font-style: italic;
-}
-
-.post-panel a.link,
-.last-posts a.link{
-    font-weight: 800;
-    color: #01598b;
-}
-
-.post-panel .header a:hover{
-    color: #01598b;
-    border-bottom: 2px solid #000;
-    transition: 0.1s;
-}
-
 .blog{
     padding: 50px 80px;
     margin-bottom: 80px;
@@ -291,51 +240,6 @@ nav .nav-links a.selected{
 
 .about .right-about img{
     max-width: 500px;
-}
-
-.post{
-    padding: 40px 120px;   
-}
-
-.post-content{
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    filter: drop-shadow(10px 10px 10px rgba(36, 36, 36, 0.5));
-    border-radius: 15px;
-    padding-bottom: 50px;
-}
-
-.post-content img{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    width: 100%;
-}
-
-
-.post-content .post-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.post-content .post-title{
-    text-align: center;
-    justify-content: right;
-    padding: 10px 10px;
-    color: #000; 
-    font-size: 35px;
-    font-weight: 800;
-    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7));
-}
-
-.post-content p{
-    padding: 10px 25px;
-    text-align: justify;
-    font-weight: 400;
-    text-indent: 50px;
-    line-height: 1.5;
 }
 
 .footer {
